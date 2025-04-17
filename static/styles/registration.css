@@ -1,0 +1,156 @@
+/* CoreHub Register Page Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🔰 Navigation Bar */
+.navbar {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #60a5fa;
+}
+
+/* 🧾 Register Container */
+.register-container {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #60a5fa;
+  outline: none;
+}
+
+/* 🔘 Buttons */
+.btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+}
+
+/* 🔗 Login Link */
+.login-link {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.login-link a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Success Message */
+.success-message {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #e6fffa;
+  border: 1px solid #38b2ac;
+  border-radius: 8px;
+}
+
+.success-message p {
+  margin-bottom: 1rem;
+  color: #047857;
+  font-weight: 600;
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .register-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,159 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #5c6bc0;
+}
+
+/* Profile Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Header Section */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.profile-header img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-header div {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.profile-header h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile-header p {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.profile-header button {
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.profile-header button:hover {
+    background-color: #3f51b5;
+}
+
+/* Section Headers */
+section h3 {
+    font-size: 24px;
+    color: #5c6bc0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 5px;
+}
+
+/* Personal Information Section */
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+section ul li strong {
+    color: #333;
+}
+
+/* Courses Section */
+section ul li {
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+section ul li:last-child {
+    border-bottom: none;
+}
+
+section ul li span {
+    font-weight: bold;
+}
+
+section ul li .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+section ul li .progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: #5c6bc0;
+    border-radius: 5px;
+}
+
+/* Skills Section */
+section ul li {
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+section ul li:last-child {
+    border-bottom: none;
+}
+
+section ul li .proficiency {
+    font-weight: bold;
+    color: #5c6bc0;
+}
+
+/* Edit Profile Link */
+div a {
+    font-size: 18px;
+    color: #5c6bc0;
+    text-decoration: none;
+}
+
+div a:hover {
+    text-decoration: underline;
+}

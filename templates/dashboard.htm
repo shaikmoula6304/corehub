@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreHub Student Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/dashboard.css') }}">
+</head>
+<body>
+    <!-- 📱 Mobile Top Navigation -->
+<nav class="top-nav">
+    <div class="brand">CoreHub</div>
+    <div class="hamburger" onclick="toggleSidebar()">
+      &#9776;
+    </div>
+  </nav>
+  
+  <!-- Navigation Sidebar -->
+  <aside class="sidebar">
+    <h2 class="logo">CoreHub</h2>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#courses">My Courses</a></li>
+      <li><a href="#projects">My Projects</a></li>
+      <li><a href="#blogs">Saved Blogs</a></li>
+      <li><a href="#profile">Profile</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard">
+    <header>
+      <h1>Welcome Back, Student!</h1>
+    </header>
+
+    <section id="overview" class="card-section">
+      <h2>Dashboard Overview</h2>
+      <div class="card-grid">
+        <div class="card">📚 <h3>3 Courses Enrolled</h3></div>
+        <div class="card">💡 <h3>2 Projects Submitted</h3></div>
+        <div class="card">📝 <h3>5 Blogs Saved</h3></div>
+      </div>
+    </section>
+
+    <section id="profile" class="profile-section">
+      <h2>Profile Summary</h2>
+      <p>Name: Shaik Moulali</p>
+      <p>Email: shaikmoula6304@gmail.com</p>
+      <p>Institution: PBR Visvodaya Institute of Technology and Sciences</p>
+    </section>
+  </main>
+</body>
+</html>

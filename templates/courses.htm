@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreHub - Empowering ECE Students</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/courses.css') }}">
+</head>
+<body>
+<section class="courses-section" id="courses">
+    <h2 class="section-title">Explore Our Courses</h2>
+    <!-- Filters -->
+    <div class="course-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="vlsi">VLSI</button>
+      <button class="filter-btn" data-filter="arduino">Arduino</button>
+      <button class="filter-btn" data-filter="frontend">Frontend</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+      <button class="filter-btn" data-filter="iot">IoT</button>
+    </div>
+    <!-- Course Cards Grid -->
+    <div class="courses-grid">
+      <!-- VLSI Course -->
+      <div class="course-card" data-category="vlsi">
+        <h3>Introduction to VLSI Design</h3>
+        <span class="course-tag beginner">Beginner</span>
+        <p class="duration">Duration: 4 Weeks</p>
+        <p class="course-desc">Learn the fundamentals of VLSI, logic gates, and Verilog HDL with hands-on simulations.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <!-- Arduino Course -->
+      <div class="course-card" data-category="arduino">
+        <h3>Arduino Programming Basics</h3>
+        <span class="course-tag beginner">Beginner</span>
+        <p class="duration">Duration: 6 Hours</p>
+        <p class="course-desc">Understand microcontroller concepts and build real-time Arduino projects.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+  
+      <!-- Frontend Course -->
+      <div class="course-card" data-category="frontend">
+        <h3>Frontend Web Development</h3>
+        <span class="course-tag intermediate">Intermediate</span>
+        <p class="duration">Duration: 3 Weeks</p>
+        <p class="course-desc">Build responsive websites using HTML, CSS, and JavaScript with modern UI techniques.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+  
+      <!-- Backend Course -->
+      <div class="course-card" data-category="backend">
+        <h3>Backend with Python & Flask</h3>
+        <span class="course-tag intermediate">Intermediate</span>
+        <p class="duration">Duration: 2 Weeks</p>
+        <p class="course-desc">Learn backend fundamentals, API development, and Firebase or database integration.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+  
+      <!-- IoT Course -->
+      <div class="course-card" data-category="iot">
+        <h3>IoT & Real-Time Applications</h3>
+        <span class="course-tag advanced">Advanced</span>
+        <p class="duration">Duration: 3 Weeks</p>
+        <p class="course-desc">Connect hardware and cloud using IoT protocols, ESP32, and automation systems.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+  
+      <!-- More Courses Can Be Added Here -->
+  
+    </div>
+  </section>
+
+  <section class="hero-section">
+    <h1>
+      <span id="typewriter"></span>
+    </h1>
+    <p>Empowering ECE Students Through Real-World Learning.</p>
+    <a href="#courses" class="cta-button">Start Learning</a>
+  </section>
+  
+  <script src="{{ url_for('static', filename='script/courses.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Link to External CSS File (if you have one) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/profile.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>User Profile</h1>
+</header>
+
+<div class="container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <img src="https://via.placeholder.com/100" alt="User Avatar">
+        <div>
+            <h2>{{ user['name'] }}</h2>
+            <p>Email: {{ user['email'] }}</p>
+            <p>College: {{ user['college'] }}</p>
+            <p>Branch: {{ user['branch'] }}</p>
+            <p>Year: {{ user['year'] }}</p>
+            <button onclick="window.location.href='{{ url_for("logout") }}'">Logout</button>
+
+        </div>
+    </div>
+
+    <!-- User Info -->
+    <section>
+        <h3>Personal Information</h3>
+        <ul>
+            <li><strong>Mobile:</strong> {{ user['mobile'] }}</li>
+            <li><strong>Password:</strong> ********</li>
+        </ul>
+    </section>
+
+    <!-- Enrolled Courses -->
+    <section>
+        <h3>Enrolled Courses</h3>
+        <ul>
+            {% if courses %}
+                {% for course in courses %}
+                    <li>{{ course['name'] }} - Progress: {{ course['progress'] }}%</li>
+                {% endfor %}
+            {% else %}
+                <li>No courses enrolled yet.</li>
+            {% endif %}
+        </ul>
+    </section>
+
+    <!-- User Skills -->
+    <section>
+        <h3>Skills</h3>
+        <ul>
+            {% if skills %}
+                {% for skill in skills %}
+                    <li>{{ skill['name'] }} - Proficiency: {{ skill['proficiency'] }}</li>
+                {% endfor %}
+            {% else %}
+                <li>No skills added yet.</li>
+            {% endif %}
+        </ul>
+    </section>
+
+    </div>
+</div>
+<script src="{{ url_for('static', filename='script/profile.js') }}"></script>
+</body>
+</html>

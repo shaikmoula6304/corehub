@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreHub - Empowering ECE Students</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/projects.css') }}">
+</head>
+<body>
+<section class="projects-section" id="projects">
+    <h2 class="section-title">Real-Time Projects</h2>
+  
+    <!-- Filters -->
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="beginner">Beginner</button>
+      <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+      <button class="filter-btn" data-filter="advanced">Advanced</button>
+    </div>
+  
+    <!-- Grid -->
+    <div class="project-grid">
+      <div class="project-card" data-difficulty="beginner">
+        <h3>LED Blinking with Arduino</h3>
+        <p><strong>Tech:</strong> Arduino, C++</p>
+        <p>A beginner project to control LEDs using code.</p>
+        <a href="#">GitHub Repo</a>
+      </div>
+  
+      <div class="project-card" data-difficulty="intermediate">
+        <h3>IoT Temp Monitor</h3>
+        <p><strong>Tech:</strong> ESP32, Blynk, DHT11</p>
+        <p>Send real-time temperature data to the cloud.</p>
+        <a href="#">GitHub Repo</a>
+      </div>
+  
+      <div class="project-card" data-difficulty="advanced">
+        <h3>VLSI Traffic Light Controller</h3>
+        <p><strong>Tech:</strong> Verilog, FPGA</p>
+        <p>Simulate a smart traffic controller using VLSI.</p>
+        <a href="#">GitHub Repo</a>
+      </div>
+      
+      <!-- Add more cards -->
+    </div>
+  </section>
+
+  <!-- Hidden by default -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3 id="modalTitle">Project Title</h3>
+      <p id="modalTech">Technologies: Arduino, C++</p>
+      <p id="modalDesc">Project description goes here.</p>
+      <a id="modalLink" href="#" target="_blank">View GitHub Repo</a>
+    </div>
+  </div>
+  
+  <script src="{{ url_for('static', filename='script/profile.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/styles/admin-panel.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="admin-panel">
+        <!-- Sidebar or Navigation -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Manage Content</a>
+                    <ul>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">User Management</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Profile Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <header class="header">
+                <h1>Admin Dashboard</h1>
+            </header>
+
+            <!-- Dashboard Overview -->
+            <section class="overview">
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p>125</p>
+                </div>
+                <div class="card">
+                    <h3>Total Blogs</h3>
+                    <p>50</p>
+                </div>
+                <div class="card">
+                    <h3>Total Courses</h3>
+                    <p>10</p>
+                </div>
+                <div class="card">
+                    <h3>Total Projects</h3>
+                    <p>20</p>
+                </div>
+            </section>
+
+            <!-- Manage Content Section -->
+            <section class="manage-content">
+                <h2>Manage Content</h2>
+                <div class="content-list">
+                    <h3>Blogs</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Date Created</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Blog Post 1</td>
+                                <td>2025-04-01</td>
+                                <td>
+                                    <button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Blog Post 2</td>
+                                <td>2025-04-05</td>
+                                <td>
+                                    <button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="content-list">
+                    <h3>Courses</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Course Title</th>
+                                <th>Instructor</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Course 1</td>
+                                <td>John Doe</td>
+                                <td>
+                                    <button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- User Management Section -->
+            <section class="user-management">
+                <h2>User Management</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User Name</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Messages Section -->
+            <section class="messages">
+                <h2>Messages</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sender</th>
+                            <th>Message</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Can you help with course enrollment?</td>
+                            <td>
+                                <button>Reply</button>
+                                <button>Mark as Resolved</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+    <script src="/scripts/admin-panel.js"></script>
+</body>
+</html>

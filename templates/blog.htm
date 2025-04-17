@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreHub Blog</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/blog.css') }}">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="blog-header">
+    <h1>CoreHub Blog</h1>
+    <p>Explore insights, tutorials, and guides for ECE students</p>
+  </header>
+
+  <!-- Filters -->
+  <div class="blog-filters">
+    <input type="text" id="searchInput" placeholder="Search blog posts..." />
+    <select id="categorySelect">
+      <option value="all">All Categories</option>
+      <option value="vlsi">VLSI</option>
+      <option value="arduino">Arduino</option>
+      <option value="frontend">Frontend</option>
+      <option value="embedded">Embedded Systems</option>
+    </select>
+  </div>
+
+  <!-- Blog Cards -->
+  <section class="blog-posts">
+    <div class="blog-card" data-category="vlsi">
+      <h3>Introduction to VLSI Design</h3>
+      <p>Learn the fundamentals of Very-Large-Scale Integration with real-time examples.</p>
+      <span class="tag">VLSI</span>
+    </div>
+
+    <div class="blog-card" data-category="arduino">
+      <h3>Getting Started with Arduino Uno</h3>
+      <p>Build beginner-friendly electronics projects using Arduino Uno.</p>
+      <span class="tag">Arduino</span>
+    </div>
+
+    <div class="blog-card" data-category="frontend">
+      <h3>HTML & CSS for ECE Students</h3>
+      <p>Learn to build portfolio sites and dashboards using frontend tools.</p>
+      <span class="tag">Frontend</span>
+    </div>
+
+    <div class="blog-card" data-category="embedded">
+      <h3>Embedded C Programming Basics</h3>
+      <p>Dive into programming microcontrollers for real-time control systems.</p>
+      <span class="tag">Embedded</span>
+    </div>
+
+    <div class="blog-card" data-category="vlsi">
+      <h3>FPGA vs ASIC: What's the Difference?</h3>
+      <p>Compare FPGA and ASIC for industry applications and career choices.</p>
+      <span class="tag">VLSI</span>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="{{ url_for('static', filename='script/blog.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreHub | Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+</head>
+<body>
+
+  <!-- 🔰 Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">CoreHub</div>
+    <ul class="nav-links">
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="courses.htm">Courses</a></li>
+      <li><a href="projects.htm">Projects</a></li>
+      <li><a href="blog.htm">Blog</a></li>
+      <li><a href="careers.htm">Careers</a></li>
+      <li><a href="about.htm">About</a></li>
+      <li><a href="contact.htm">Contact</a></li>
+      <li><a href="login.htm">Login</a></li>
+      <li><a href="profile.htm">Profile</a></li>
+    </ul>
+    </ul>
+  </nav>
+
+  <!-- 🧾 Login Container -->
+  <div class="login-container">
+    <h2>Login to CoreHub</h2>
+
+    <!-- Login Form -->
+    <form id="loginForm" onsubmit="loginUser(event)">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+
+      <button  type="submit" class="btn">Login</button>
+      <p class="register-link">Don't have an account? <a href="/registration.htm">Register here</a></p>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='script/login.js') }}"></script>
+</body>
+</html>

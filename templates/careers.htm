@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreHub Careers</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/careers.css') }}">
+</head>
+<body>
+    
+    <nav class="navbar">
+    <a href="#" class="logo">CoreHub</a>
+  
+    <ul>
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="courses.htm">Courses</a></li>
+      <li><a href="projects.htm">Projects</a></li>
+      <li><a href="blog.htm">Blog</a></li>
+      <li><a href="careers.htm">Careers</a></li>
+      <li><a href="about.htm">About</a></li>
+      <li><a href="contact.htm">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div class="page-content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search blog posts, careers, projects..." />
+    </div>
+  
+    <h2>Welcome to CoreHub Career Explorer</h2>
+    <p>Select your career path or use the search bar above to find what interests you!</p>
+  </div>
+  
+
+
+  <!-- 🎯 Hero Section -->
+  <section class="hero">
+    <h1>Explore Your ECE Career Path</h1>
+    <p>Choose your domain and discover a roadmap to success.</p>
+  </section>
+
+  <!-- 🔍 Filter (optional) -->
+  <div class="filter-section">
+    <input type="text" id="searchRole" placeholder="Search career role..." />
+  </div>
+
+  <!-- 💼 Career Cards -->
+  <section class="career-grid" id="careerGrid">
+    <div class="career-card">
+      <h3>VLSI Engineer</h3>
+      <p>Design and develop integrated circuits using HDL & CMOS.</p>
+      <a href="roadmaps/vlsi.html">View Roadmap</a>
+    </div>
+    <div class="career-card">
+      <h3>Embedded Systems Developer</h3>
+      <p>Work with microcontrollers, C/C++, and real-time systems.</p>
+      <a href="roadmaps/embedded.html">View Roadmap</a>
+    </div>
+    <div class="career-card">
+      <h3>IoT Engineer</h3>
+      <p>Connect devices and sensors for smart automation projects.</p>
+      <a href="roadmaps/iot.html">View Roadmap</a>
+    </div>
+    <div class="career-card">
+      <h3>Signal Processing Engineer</h3>
+      <p>Analyze and process signals using MATLAB, Python, DSP.</p>
+      <a href="roadmaps/signal-processing.html">View Roadmap</a>
+    </div>
+    <div class="career-card">
+      <h3>FPGA Developer</h3>
+      <p>Program FPGAs using Verilog/VHDL for custom hardware logic.</p>
+      <a href="roadmaps/fpga.html">View Roadmap</a>
+    </div>
+    <div class="career-card">
+      <h3>Frontend Developer</h3>
+      <p>Design UI/UX using HTML, CSS, JavaScript — with ECE logic.</p>
+      <a href="roadmaps/frontend.html">View Roadmap</a>
+    </div>
+    <div class="career-card">
+      <h3>Backend Developer</h3>
+      <p>Build powerful servers & APIs using Python, Flask, Node.js.</p>
+      <a href="roadmaps/backend.html">View Roadmap</a>
+    </div>
+    <div class="career-card">
+      <h3>Academic / Researcher</h3>
+      <p>Pursue higher studies, contribute to journals and patents.</p>
+      <a href="roadmaps/research.html">View Roadmap</a>
+    </div>
+  </section>
+
+  <!-- 📄 Footer -->
+  <footer class="footer">
+    <p>© 2025 CoreHub. All rights reserved.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script/careers.js') }}"></script>
+</body>
+</html>

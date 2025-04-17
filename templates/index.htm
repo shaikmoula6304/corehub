@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreHub - Empowering ECE Students</title>
+  <!-- Link to styles.css inside static/css folder -->
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+
+</head>
+<body>
+  <!-- 🔝 Header / Navigation -->
+  <header>
+    <div class="container nav">
+      <h1 class="logo">CoreHub</h1>
+      <nav>
+        <ul>
+          <li><a href="index.htm">Home</a></li>
+          <li><a href="courses.htm">Courses</a></li>
+          <li><a href="projects.htm">Projects</a></li>
+          <li><a href="blog.htm">Blog</a></li>
+          <li><a href="careers.htm">Careers</a></li>
+          <li><a href="about.htm">About</a></li>
+          <li><a href="contact.htm">Contact</a></li>
+          <li><a href="login.htm">Login</a></li>
+          <li><a href="profile.htm">Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🏠 Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Empower Your ECE Journey</h2>
+      <p>Learn VLSI, Embedded Systems, Frontend, Backend & More!</p>
+      <a href="#courses" class="cta-btn">Start Learning</a>
+    </div>
+  </section>
+
+  <!-- 🎯 Why CoreHub -->
+  <section class="why-corehub">
+    <div class="container">
+      <h2>Why CoreHub?</h2>
+      <ul>
+        <li>📘 Structured learning by year & stream</li>
+        <li>💡 Real-world projects & industry demand skills</li>
+        <li>🎓 Career roadmaps tailored for ECE students</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 🔥 Popular Categories -->
+  <section class="popular-categories">
+    <div class="container">
+      <h2>Popular Categories</h2>
+      <div class="category-grid">
+        <div class="category-card"><a href="/Index/VLSI.htm">VLSI</a></div>
+        <div class="category-card">Embedded Systems</div>
+        <div class="category-card">Arduino & IoT</div>
+        <div class="category-card">Frontend</div>
+        <div class="category-card">Backend</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📈 Trending Articles -->
+  <section class="trending-articles">
+    <div class="container">
+      <h2>Trending Articles</h2>
+      <div class="article-preview">
+        <p>🔗 How to start with Embedded Systems as a 2nd year student</p>
+        <p>🔗 Best Projects with Arduino Uno in 2025</p>
+        <p>🔗 Roadmap to become a VLSI Engineer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📅 Start by Your Year -->
+  <section class="year-filter">
+    <div class="container">
+      <h2>Start Learning by Year</h2>
+      <div class="year-options">
+        <button>1st Year</button>
+        <button>2nd Year</button>
+        <button>3rd Year</button>
+        <button>Final Year</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🤝 Join Community -->
+  <section class="join-community">
+    <div class="container">
+      <h2>Join Our CoreHub Community</h2>
+      <a href="https://t.me/corehubcommunity" class="join-btn">Join Telegram</a>
+    </div>
+  </section>
+
+  <section class="counter-section fade-in">
+    <div class="counter-box">
+      <h3 class="counter" data-target="500">0</h3>
+      <p>Students Joined</p>
+    </div>
+    <div class="counter-box">
+      <h3 class="counter" data-target="120">0</h3>
+      <p>Articles Published</p>
+    </div>
+    <div class="counter-box">
+      <h3 class="counter" data-target="80">0</h3>
+      <p>Projects Uploaded</p>
+    </div>
+  </section>
+  
+  <!-- 📱 Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 CoreHub. All rights reserved.</p>
+      <p><a href="#">Terms</a> | <a href="#">Privacy</a></p>
+    </div>
+  </footer>
+  <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+
+</body>
+</html>

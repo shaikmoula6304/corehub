@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreHub | Register</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/registration.css') }}">
+</head>
+<body>
+
+  <!-- 🔰 Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">CoreHub</div>
+    <ul class="nav-links">
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="courses.htm">Courses</a></li>
+      <li><a href="projects.htm">Projects</a></li>
+      <li><a href="blog.htm">Blog</a></li>
+      <li><a href="careers.htm">Careers</a></li>
+      <li><a href="about.htm">About</a></li>
+      <li><a href="contact.htm">Contact</a></li>
+      <li><a href="login.htm">Login</a></li>
+      <li><a href="profile.htm">Profile</a></li>
+    </ul>
+    </ul>
+  </nav>
+
+  <!-- 🧾 Registration Container -->
+  <div class="register-container">
+    <h2>Create Your CoreHub Account</h2>
+
+    <!-- Step 1: Registration Form -->
+    <form id="registerForm" onsubmit="sendForm(event)">
+      <div id="step1">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email ID</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="college">College Name</label>
+          <input type="text" id="college" name="college" required />
+        </div>
+
+        <div class="form-group">
+          <label for="branch">Branch</label>
+          <input type="text" id="branch" name="branch" required />
+        </div>
+
+        <div class="form-group">
+          <label for="year">Year</label>
+          <select id="year" name="year" required>
+            <option value="" disabled selected>Select Year</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" id="mobile" name="mobile" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Create Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <button type="submit" class="btn">Send OTP</button>
+        <p class="login-link">Already have an account? <a href="/login.htm">Login here</a></p>
+      </div>
+    </form>
+
+    <!-- Step 2: OTP Verification -->
+    <form id="otpForm" onsubmit="verifyOTP(event)">
+      <div id="step2" style="display: none;">
+        <div class="form-group">
+          <label for="otp">Enter OTP sent to your Email</label>
+          <input type="text" id="otp" required />
+        </div>
+        <button type="submit" class="btn">Verify OTP</button>
+      </div>
+    </form>
+
+    <!-- Success Message -->
+    <div id="loginLink" class="success-message" style="display: none;">
+      <p>🎉 Account created successfully!</p>
+      <a href="/backend/templates/login.htm" class="btn">Go to Login</a>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script/registration.js') }}"></script>
+</body>
+</html>

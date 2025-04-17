@@ -1,0 +1,114 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .blog-header {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    border-radius: 12px;
+  }
+  
+  .blog-header h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .blog-header p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Filters */
+  .blog-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .blog-filters input,
+  .blog-filters select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .blog-filters input:focus,
+  .blog-filters select:focus {
+    border-color: #0077ff;
+  }
+  
+  /* Blog Posts */
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Blog Card */
+  .blog-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #0055a5;
+  }
+  
+  .blog-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .blog-card .tag {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #eef4ff;
+    color: #0077ff;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  
+  /* Responsive improvements */
+  @media (max-width: 768px) {
+    .blog-filters {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .blog-header h1 {
+      font-size: 2rem;
+    }
+  }
+  
