@@ -28,7 +28,7 @@ async function loginUser(event) {
 
     if (response.ok && result.success) {
       // ✅ Redirect on success
-      window.location.href = "index.htm";
+      window.location.href = "index.html";
     } else {
       // ❌ Login failed
       alert(result.message || "Invalid email or password.");
@@ -49,7 +49,7 @@ fetch('/login', {
 .then(res => res.json())
 .then(data => {
   if (data.success) {
-    window.location.href = "/index.htm";
+    window.location.href = "/index.html";
   } else {
     alert(data.message);
   }

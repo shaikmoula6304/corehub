@@ -40,7 +40,7 @@ def login_required(f):
 
 @app.route('/')
 def index():
-    return render_template("registration.htm")
+    return render_template("registration.html")
 @app.route('/register', methods=['POST'])
 def register():
     try:
@@ -114,9 +114,9 @@ def send_otp_email(to_email, otp):
         server.login(sender_email, sender_password)
         server.sendmail(sender_email, to_email, message)
 
-@app.route("/login.htm")
+@app.route("/login.html")
 def login_page():
-    return render_template("login.htm")
+    return render_template("login.html")
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -139,9 +139,9 @@ def login():
         print("🔥 LOGIN ERROR:", e)
         return jsonify({"success": False, "message": "Server error"}), 500
 
-@app.route("/registration.htm")
+@app.route("/registration.html")
 def registration_page():
-    return render_template("registration.htm")
+    return render_template("registration.html")
 
 # ✅ Secured routes
 @app.route("/index.html")
@@ -149,38 +149,38 @@ def registration_page():
 def index_page():
     return render_template("index.html")
 
-@app.route('/blog.htm')
+@app.route('/blog.html')
 @login_required
 def blog():
-    return render_template("blog.htm")
+    return render_template("blog.html")
 
-@app.route('/courses.htm')
+@app.route('/courses.html')
 @login_required
 def courses():
-    return render_template("courses.htm")
+    return render_template("courses.html")
 
-@app.route('/careers.htm')
+@app.route('/careers.html')
 @login_required
 def careers():
-    return render_template("careers.htm")
+    return render_template("careers.html")
 
-@app.route('/projects.htm')
+@app.route('/projects.html')
 @login_required
 def projects():
-    return render_template("projects.htm")
+    return render_template("projects.html")
 
-@app.route("/about.htm")
+@app.route("/about.html")
 def about_page():
-    return render_template("about.htm")
-@app.route("/contact.htm")
+    return render_template("about.html")
+@app.route("/contact.html")
 def contact_page():
-    return render_template("contact.htm")
-@app.route("/vlsi.htm")
+    return render_template("contact.html")
+@app.route("/vlsi.html")
 def vlsi_page():
-    return render_template("vlsi.htm")
+    return render_template("vlsi.html")
 
 
-@app.route("/profile.htm")
+@app.route("/profile.html")
 def profile_page():
     if "user_id" in session:
         user_data = {
@@ -188,7 +188,7 @@ def profile_page():
             "email": session.get("email"),
             # Add any other user data stored in session
         }
-        return render_template("profile.htm", user=user_data)
+        return render_template("profile.html", user=user_data)
     else:
         return redirect(url_for("login_page"))
     

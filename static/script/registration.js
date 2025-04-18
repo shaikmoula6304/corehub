@@ -66,7 +66,7 @@ async function verifyOTP(event) {
       step2.style.display = "none";
       loginLink.style.display = "block";
       showMessage("🎉 Account created successfully!", "success");
-      window.location.href = "login.htm";
+      window.location.href = "login.html";
     } else {
       showMessage(result.message || "❌ Invalid OTP, please try again.");
     }
