@@ -1,0 +1,20 @@
+# Ignore Python cache and environment
+__pycache__/
+*.pyc
+.env
+
+# Firebase secret key
+serviceAccountKey.json
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Ignore compiled files
+*.exe
+*.dll
+*.o
+
+# Ignore VSCode settings
+.vscode/
