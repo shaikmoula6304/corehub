@@ -144,10 +144,10 @@ def registration_page():
     return render_template("registration.htm")
 
 # ✅ Secured routes
-@app.route("/index.htm")
+@app.route("/index.html")
 @login_required
 def index_page():
-    return render_template("index.htm")
+    return render_template("index.html")
 
 @app.route('/blog.htm')
 @login_required
