@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
     <!-- Link to External CSS File (if you have one) -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/profile.css') }}">
+    <link rel="stylesheet" href="/backend/static/styles/profile.css">
 </head>
 <body>
 
@@ -23,7 +23,7 @@
             <p>College: {{ user['college'] }}</p>
             <p>Branch: {{ user['branch'] }}</p>
             <p>Year: {{ user['year'] }}</p>
-            <button onclick="window.location.href='{{ url_for("logout") }}'">Logout</button>
+            <button onclick="window.location.href=logout.html">Logout</button>
 
         </div>
     </div>
@@ -67,6 +67,6 @@
 
     </div>
 </div>
-<script src="{{ url_for('static', filename='script/profile.js') }}"></script>
+<script src="/backend/static/script/profile.js"></script>
 </body>
 </html>
