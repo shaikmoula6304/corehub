@@ -172,6 +172,14 @@ def projects():
 @app.route("/about.htm")
 def about_page():
     return render_template("about.htm")
+@app.route("/contact.htm")
+def contact_page():
+    return render_template("contact.htm")
+@app.route("/vlsi.htm")
+def vlsi_page():
+    return render_template("vlsi.htm")
+
+
 @app.route("/profile.htm")
 def profile_page():
     if "user_id" in session:
